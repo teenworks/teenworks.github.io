@@ -1,0 +1,61 @@
+/**
+ *
+ * main.sass
+ *
+ * Copyleft 2014 teenworks.github.io
+ *
+ * @author fantasy
+ * @create 2014-08-13
+ * @update 2014-08-13
+ *
+ */
+
+@import variables
+
+@import compass/reset
+@import compass/layout
+@import compass/css3
+
+@import blueprint/colors
+
+body
+  position: relative
+  min-height: 100vh
+
+.header, .container, .footer
+  min-width: $site-width
+  margin: 0 auto
+
+.header
+  padding-top: 100px
+  text-align: center
+  h1
+    font-family: $font-type-one
+    color: $font-color
+    font-size: $font-h1
+  .slogan
+    font-family: $font-type-two
+    padding: 20px
+    color: $quiet-color
+    font-size: $font-h2
+
+
+.footer
+  position: absolute
+  left: 50%
+  margin-left: -490px
+  bottom: 0
+  border-top: 1px solid $blueprint-border-color
+  padding: 20px 0
+  p
+    text-align: center
+    font-family: $font-type-three
+    a
+      color: $alt-text-color
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+
+
+
